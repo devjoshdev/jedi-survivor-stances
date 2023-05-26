@@ -45,7 +45,7 @@ const NavBar = (props) => {
                     {data.map(elem => 
                         <Link style={linkStyle} key={elem} href={`/stances/${elem}`}>
                             <p style={navElementStyle} 
-                            onMouseEnter={(e) => {e.target.style.boxShadow = '0 4px 8px 0 rgba(255, 64, 0, 0.5)'}}
+                            onMouseEnter={(e) => {e.target.style.boxShadow = '0 8px 16px 0 rgba(255, 64, 0, 0.75)'}}
                             onMouseLeave={(e) => {e.target.style.boxShadow = 'none'}}>{formatNavElement(elem)}</p>
                         </Link>)}
                 </ul>
