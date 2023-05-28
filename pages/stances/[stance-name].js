@@ -1,7 +1,9 @@
 import { stancesData } from "@/utils/data";
+import NavBar from "@/components/NavBar";
 export default function Stance(props) {
     return (
         <>
+            <NavBar navElements={stancesData.map(stance => stance.id)}/>
             <p>So you are looking for <em>{props["stance-name"]}</em></p>
         </>
     );
